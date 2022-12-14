@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 RUN apt-get update && \
     apt-get install -yq tzdata && \
-    ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime && \
+    ln -fs /usr/share/zoneinfo/Asia/ShangHai /etc/localtime && \
     dpkg-reconfigure -f noninteractive tzdata && \
     apt-get install -y python3-pip
 
